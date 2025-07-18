@@ -7,7 +7,7 @@ def find_email(text):
     local_part@domain, where local_part can contain alphanumeric characters, dots, underscores, and hyphens,
     and domain can contain alphanumeric characters and dots.
     """
-    email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,}'
+    email_pattern = r'[a-zA-Z._%+-]+@[a-zA-Z._%+-]+\.[a-zA-Z]{2,}'
     return re.findall(email_pattern, text)
 
 if __name__ == "__main__":
